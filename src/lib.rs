@@ -87,7 +87,7 @@ impl Plugin for Misschien {
         Info {
             name: "Misschien".to_string(),
             vendor: "Rein van der Woerd".to_string(),
-            unique_id: 243723072,
+            unique_id: 9716374,
             version: 1,
             inputs: 2,
             outputs: 2,
