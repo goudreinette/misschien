@@ -36,18 +36,12 @@ impl Default for MisschienParameters {
 /**
  * Plugin
  */ 
-struct DelayedMidiEvent {
-    event: MidiEvent,
-    time_until_send: f32
-}
-
 
 #[derive(Default)]
 struct Misschien {
     host: HostCallback,
     sample_rate: f32,
     immediate_events: Vec<MidiEvent>,
-    delayed_events: Vec<DelayedMidiEvent>,
     send_buffer: SendEventBuffer,
     params: Arc<MisschienParameters>,
 }
